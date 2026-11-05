@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+outputs/
+lewm_sweep/results/*/logs/
+lewm_sweep/results/smoke/
+lewm_sweep/results/cube_smoke/
+*.h5
+*.mp4
+.DS_Store

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeWM Planning Sweep</title>
+<style>
+:root { --bg: #fbfbfa; --panel: #ffffff; --fg: #0b0b0b; --muted: #5d5c58; --line: #e3e2dc; --grid: #ecebe6; --axis: #c3c2b7;
+  --s5: #1baf7a; --s2: #eb6834; --s1: #2a78d6; --tip: #ffffff; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg: #161615; --panel: #1f1f1d; --fg: #f0efec; --muted: #b3b2a9; --line: #33332f; --grid: #2a2a27; --axis: #4a4a45;
+  --s5: #199e70; --s2: #d95926; --s1: #3987e5; --tip: #262624; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 48px; display: flex; flex-direction: column; gap: 20px; }
+h1 { font: 400 30px/1.2 Georgia, "Times New Roman", serif; margin: 0 0 6px; }
+.lead { margin: 0; color: var(--muted); max-width: 72ch; }
+.lead b { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; }
+.tile, .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; min-width: 0; }
+.tile .label { font-size: 12px; color: var(--muted); }
+.tile .big { font: 400 30px/1.2 Georgia, serif; font-variant-numeric: tabular-nums; margin: 4px 0; }
+.tile .sub { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+.card h2 { font-size: 16px; font-weight: 600; margin: 0; }
+.note { font-size: 12px; color: var(--muted); margin: 4px 0 12px; max-width: 72ch; }
+.chart { position: relative; min-height: 260px; }
+.chart.short { min-height: 200px; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.seg { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.seg button { font: inherit; color: var(--fg); background: transparent; border: 1px solid var(--line); border-radius: 6px; padding: 2px 10px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--bg); border-color: var(--muted); font-weight: 600; }
+.seg button:focus-visible { outline: 2px solid var(--muted); outline-offset: 1px; }
+.tip { position: absolute; pointer-events: none; background: var(--tip); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,.12); padding: 4px 8px; font-size: 12px; white-space: nowrap; z-index: 2; }
+.tip .h { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 14px; }
+th { text-align: left; font-size: 12px; font-weight: 600; color: var(--muted); border-bottom: 1px solid var(--line); padding: 4px 8px; }
+td { padding: 4px 8px; border-bottom: 1px solid var(--line); }
+.r { text-align: right; }
+footer { font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>LeWM planning sweep</h1>
+    <p class="lead">On Push-T, committing to the full plan reached <b id="t-best">—</b> success, while replanning after every block never got above <b id="t-rh1">—</b> at any planning budget. How often the robot replans matters more than how hard it thinks. On OGBench-Cube, success levels off after a few iterations and replanning frequency barely matters.</p>
+  </header>
+  <section class="tiles">
+    <div class="tile"><div class="label">Push-T, paper setting (30 iterations × 300 samples)</div><div class="big" id="k-default">—</div><div class="sub"><span id="k-default-t">—</span> s of planning per episode</div></div>
+    <div class="tile"><div class="label">Push-T, cheaper budget (10 × 300)</div><div class="big" id="k-cheap">—</div><div class="sub"><span id="k-cheap-t">—</span> s of planning per episode</div></div>
+    <div class="tile"><div class="label">Push-T, best when replanning every block</div><div class="big" id="k-rh1">—</div><div class="sub">Across all 12 planning budgets</div></div>
+    <div class="tile"><div class="label">Cube, paper setting (10 × 300)</div><div class="big" id="k-cube">—</div><div class="sub">Paper reports about 74%</div></div>
+  </section>
+  <section class="card">
+    <h2>Push-T success vs planning iterations</h2>
+    <p class="note">Each point is 50 episodes, so rates are uncertain by about 7 points. Committed plans improve steadily with more iterations; frequent replanning stays flat.</p>
+    <div class="seg" role="group" aria-label="Samples per iteration">Samples per iteration
+      <button type="button" data-ns="30" aria-pressed="false">30</button><button type="button" data-ns="100" aria-pressed="false">100</button><button type="button" data-ns="300" aria-pressed="true">300</button>
+    </div>
+    <div class="legend">
+      <span><svg width="18" height="8" aria-hidden="true"><line x1="0" y1="4" x2="18" y2="4" stroke="var(--s5)" stroke-width="2"/></svg>Replan after 5 blocks (commit to the plan)</span>
+      <span><svg width="18" height="8" aria-hidden="true"><line x1="0" y1="4" x2="18" y2="4" stroke="var(--s2)" stroke-width="2" stroke-dasharray="5 3"/></svg>Replan after 2 blocks</span>
+      <span><svg width="18" height="8" aria-hidden="true"><line x1="0" y1="4" x2="18" y2="4" stroke="var(--s1)" stroke-width="2" stroke-dasharray="2 3"/></svg>Replan after every block</span>
+    </div>
+    <div class="chart" id="c-iters" role="img" aria-label="Line chart of Push-T success rate against CEM iterations for three replanning frequencies"></div>
+  </section>
+  <div class="grid">
+    <section class="card"><h2>Success vs planning time</h2><p class="note">Planning time per episode on an Apple M3 Max GPU, log scale. Every committed-plan budget above 1 iteration beats every replanning setting.</p><div class="chart" id="c-cost" role="img" aria-label="Scatter of Push-T success against planning seconds per episode"></div></section>
+    <section class="card"><h2>Committed plans: iterations × samples</h2><p class="note">Push-T success when replanning after 5 blocks. Iterations drive most of the gain; samples matter once iterations are high.</p><div class="chart" id="c-heat" role="img" aria-label="Heatmap of Push-T success by iterations and samples"></div></section>
+  </div>
+  <div class="grid">
+    <section class="card"><h2>Episodes differ a lot in difficulty</h2><p class="note">For each of the 50 Push-T episodes, how many of the 12 committed-plan budgets solved it.</p><div class="chart short" id="c-diff" role="img" aria-label="Histogram of how many budgets solve each Push-T episode"></div></section>
+    <section class="card"><h2>OGBench-Cube results</h2><p class="note">Same method, 50 episodes per row. Unlike Push-T, Cube levels off after a few iterations, and replanning after every block does not hurt.</p>
+      <table><thead><tr><th>Budget (iterations × samples, replan after)</th><th class="r">Success</th><th class="r">Planning s / episode</th></tr></thead><tbody id="t-cube"></tbody></table></section>
+  </div>
+  <footer>Generated by <code>dashboard/build_dashboard.py</code> from <code>lewm_sweep/results/</code>. LeWM + CEM, 50 episodes per config, Apple M3 Max.</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const DATA = /*DATA*/null;
+const RH = [5, 2, 1], DASH = {5: null, 2: '5 3', 1: '2 3'}, NAME = {5: 'Replan after 5 blocks', 2: 'Replan after 2 blocks', 1: 'Replan every block'};
+const col = (rh) => `var(--s${rh})`;
+const pct = (v) => Math.round(v) + '%';
+const P = DATA.pusht.map((r) => ({it: +r.iterations, ns: +r.samples, rh: +r.replan_after_blocks, s: +r.success_rate, t: +r.planning_seconds_per_episode}));
+const C = DATA.cube.map((r) => ({config: r.config, it: +r.iterations, ns: +r.samples, rh: +r.replan_after_blocks, s: +r.success_rate, t: +r.planning_seconds_per_episode}));
+const find = (rows, it, ns, rh) => rows.find((r) => r.it === it && r.ns === ns && r.rh === rh);
+const best = (rh) => d3.max(P.filter((r) => r.rh === rh), (r) => r.s);
+const set = (id, v) => { document.getElementById(id).textContent = v; };
+set('t-best', pct(best(5))); set('t-rh1', pct(best(1))); set('k-rh1', pct(best(1)));
+set('k-default', pct(find(P, 30, 300, 5).s)); set('k-default-t', find(P, 30, 300, 5).t.toFixed(2));
+set('k-cheap', pct(find(P, 10, 300, 5).s)); set('k-cheap-t', find(P, 10, 300, 5).t.toFixed(2));
+set('k-cube', pct(find(C, 10, 300, 5).s));
+const tb = document.getElementById('t-cube');
+C.forEach((r) => { const tr = tb.insertRow(); tr.insertCell().textContent = r.config; const a = tr.insertCell(); a.className = 'r'; a.textContent = pct(r.s); const b = tr.insertCell(); b.className = 'r'; b.textContent = r.t.toFixed(2); });
+
+let NS = 300;
+const tw = (svg, s) => { const t = svg.append('text').attr('font-size', 12).text(s); const w = t.node().getComputedTextLength(); t.remove(); return w; };
+const ax = (g) => { g.attr('font-size', null).attr('font-family', null); g.selectAll('text').style('fill', 'var(--muted)').style('font-size', '12px'); g.selectAll('.domain,line').style('stroke', 'var(--axis)'); };
+const gridY = (svg, y, x0, x1, n) => svg.append('g').selectAll('line').data(y.ticks(n)).join('line').attr('x1', x0).attr('x2', x1).attr('y1', y).attr('y2', y).style('stroke', 'var(--grid)');
+const xlabel = (svg, x, y, s) => svg.append('text').attr('x', x).attr('y', y).attr('text-anchor', 'middle').style('fill', 'var(--muted)').style('font-size', '12px').text(s);
+const tipIn = (el) => { const t = document.createElement('div'); t.className = 'tip'; t.hidden = true; el.append(t); return t; };
+const showTip = (el, tip, ev, head, lines) => { const [x, y] = d3.pointer(ev, el); tip.replaceChildren(); const h = document.createElement('div'); h.className = 'h'; h.textContent = head; tip.append(h);
+  lines.forEach((s) => { const d = document.createElement('div'); d.textContent = s; tip.append(d); }); tip.hidden = false;
+  tip.style.left = Math.max(0, Math.min(el.clientWidth - tip.offsetWidth, x + 12)) + 'px'; tip.style.top = Math.max(0, y - 10) + 'px'; };
+const fresh = (id, H) => { const el = document.getElementById(id); el.replaceChildren(); const W = Math.max(280, el.clientWidth); const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`); return {el, svg, W, H}; };
+
+function drawIters() {
+  const {el, svg, W, H} = fresh('c-iters', 260); const m = {t: 10, r: 16, b: 34, l: tw(svg, '100%') + 14}; const its = [1, 3, 10, 30];
+  const x = d3.scalePoint(its, [m.l, W - m.r]).padding(0.3), y = d3.scaleLinear([0, 100], [H - m.b, m.t]);
+  gridY(svg, y, m.l, W - m.r, 5);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat((v) => v + '%').tickSize(0).tickPadding(8)).call(ax).call((g) => g.select('.domain').remove());
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(8)).call(ax);
+  xlabel(svg, (m.l + W - m.r) / 2, H - 2, 'CEM iterations');
+  RH.forEach((rh) => { const pts = its.map((it) => find(P, it, NS, rh)).filter(Boolean);
+    svg.append('path').datum(pts).attr('fill', 'none').style('stroke', col(rh)).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('stroke-dasharray', DASH[rh]).attr('d', d3.line((d) => x(d.it), (d) => y(d.s)));
+    svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (d) => x(d.it)).attr('cy', (d) => y(d.s)).attr('r', 4).style('fill', col(rh)).style('stroke', 'var(--panel)').attr('stroke-width', 2); });
+  const tip = tipIn(el);
+  svg.append('g').selectAll('rect').data(its).join('rect').attr('x', (it) => x(it) - x.step() / 2).attr('width', x.step()).attr('y', m.t).attr('height', H - m.b - m.t).attr('fill', 'transparent')
+    .on('mousemove', (ev, it) => showTip(el, tip, ev, `${it} iterations × ${NS} samples`, RH.map((rh) => `${NAME[rh]}: ${pct(find(P, it, NS, rh).s)}`))).on('mouseleave', () => { tip.hidden = true; });
+}
+function drawCost() {
+  const {el, svg, W, H} = fresh('c-cost', 260); const m = {t: 10, r: 16, b: 34, l: tw(svg, '100%') + 14};
+  const x = d3.scaleLog([0.03, 15], [m.l, W - m.r]), y = d3.scaleLinear([0, 100], [H - m.b, m.t]);
+  gridY(svg, y, m.l, W - m.r, 5);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat((v) => v + '%').tickSize(0).tickPadding(8)).call(ax).call((g) => g.select('.domain').remove());
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues([0.1, 1, 10]).tickFormat((v) => v + ' s').tickSize(0).tickPadding(8)).call(ax);
+  xlabel(svg, (m.l + W - m.r) / 2, H - 2, 'Planning seconds per episode');
+  const tip = tipIn(el);
+  svg.append('g').selectAll('circle').data(P.slice().sort((a, b) => b.rh - a.rh)).join('circle').attr('cx', (d) => x(d.t)).attr('cy', (d) => y(d.s)).attr('r', 5).style('fill', (d) => col(d.rh)).style('stroke', 'var(--panel)').attr('stroke-width', 2)
+    .on('mousemove', (ev, d) => showTip(el, tip, ev, `${d.it} iterations × ${d.ns} samples`, [NAME[d.rh], `Success: ${pct(d.s)}`, `Planning: ${d.t.toFixed(2)} s per episode`])).on('mouseleave', () => { tip.hidden = true; });
+}
+function drawHeat() {
+  const {svg, W, H} = fresh('c-heat', 260); const m = {t: 24, r: 8, b: 8, l: tw(svg, '30 iterations') + 12}; const its = [30, 10, 3, 1], nss = [30, 100, 300];
+  const x = d3.scaleBand(nss, [m.l, W - m.r]).padding(0.04), y = d3.scaleBand(its, [m.t, H - m.b]).padding(0.04);
+  nss.forEach((ns) => svg.append('text').attr('x', x(ns) + x.bandwidth() / 2).attr('y', 14).attr('text-anchor', 'middle').style('fill', 'var(--muted)').style('font-size', '12px').text(ns + ' samples'));
+  its.forEach((it) => svg.append('text').attr('x', m.l - 8).attr('y', y(it) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--muted)').style('font-size', '12px').text(it + (it === 1 ? ' iteration' : ' iterations')));
+  const g = svg.append('g').selectAll('g').data(P.filter((r) => r.rh === 5)).join('g');
+  g.append('rect').attr('x', (d) => x(d.ns)).attr('y', (d) => y(d.it)).attr('width', x.bandwidth()).attr('height', y.bandwidth()).attr('rx', 4).style('fill', col(5)).attr('fill-opacity', (d) => 0.08 + 0.9 * d.s / 100);
+  g.append('text').attr('x', (d) => x(d.ns) + x.bandwidth() / 2).attr('y', (d) => y(d.it) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').style('fill', (d) => d.s >= 60 ? '#ffffff' : 'var(--fg)').style('font-size', '14px').text((d) => pct(d.s));
+}
+function drawDiff() {
+  const {el, svg, W, H} = fresh('c-diff', 200); const total = d3.max(DATA.difficulty, (r) => +r.configs_total);
+  const bins = d3.range(0, total + 1).map((k) => ({k, n: DATA.difficulty.filter((r) => +r.configs_solved === k).length}));
+  const m = {t: 10, r: 8, b: 34, l: tw(svg, '00') + 14};
+  const x = d3.scaleBand(bins.map((b) => b.k), [m.l, W - m.r]).padding(0.2), y = d3.scaleLinear([0, d3.max(bins, (b) => b.n)], [H - m.b, m.t]).nice();
+  gridY(svg, y, m.l, W - m.r, 4);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat(d3.format('d')).tickSize(0).tickPadding(8)).call(ax).call((g) => g.select('.domain').remove());
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(8)).call(ax);
+  xlabel(svg, (m.l + W - m.r) / 2, H - 2, `Budgets (of ${total}) that solve the episode`);
+  const tip = tipIn(el);
+  svg.append('g').selectAll('rect').data(bins).join('rect').attr('x', (b) => x(b.k)).attr('width', Math.min(32, x.bandwidth())).attr('y', (b) => y(b.n)).attr('height', (b) => y(0) - y(b.n)).attr('rx', 3).style('fill', col(5))
+    .on('mousemove', (ev, b) => showTip(el, tip, ev, `Solved by ${b.k} of ${total} budgets`, [`${b.n} episode${b.n === 1 ? '' : 's'}`])).on('mouseleave', () => { tip.hidden = true; });
+}
+const drawAll = () => { drawIters(); drawCost(); drawHeat(); drawDiff(); };
+document.querySelectorAll('.seg button').forEach((b) => b.addEventListener('click', () => { NS = +b.dataset.ns; document.querySelectorAll('.seg button').forEach((o) => o.setAttribute('aria-pressed', String(o === b))); drawIters(); }));
+drawAll(); let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawAll, 150); });
+</script>
+</body>
+</html>
