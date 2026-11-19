@@ -1,0 +1,1519 @@
+{
+ "source": "segment",
+ "iterations": 10,
+ "samples": 300,
+ "replan_after_blocks": 5,
+ "seg_budget": 50,
+ "spacing": 25,
+ "ee_tol": 0.05,
+ "n_episodes": 100,
+ "success_rate": 69.0,
+ "waypoint_rate": 69.0,
+ "seconds_per_plan": 0.23663241624832151,
+ "plans_per_episode": 1.34,
+ "planning_seconds_per_episode": 0.31708743777275084,
+ "steps_per_episode": 26.61,
+ "wall_seconds": 85.43318247795105,
+ "episodes": [
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.143716108479659
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 20,
+   "min_cube_dist": [
+    0.028448690756168057
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.03979361201845613
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 15,
+   "min_cube_dist": [
+    0.0314548855556239
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 12,
+   "min_cube_dist": [
+    0.03220196631219219
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 10,
+   "min_cube_dist": [
+    0.028638629520304833
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03666377050298733
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.17252421742844976
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.030781497019819085
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.257795222084283
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.046751505757825024
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 25,
+   "min_cube_dist": [
+    0.030722249840336818
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.2267188190537319
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.15509588781204875
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 19,
+   "min_cube_dist": [
+    0.03035621987410261
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 13,
+   "min_cube_dist": [
+    0.02555924106418906
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03515451024680387
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 12,
+   "min_cube_dist": [
+    0.03664946911089383
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.03716067160709954
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 7,
+   "min_cube_dist": [
+    0.031767009671033714
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.17112705628725378
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 15,
+   "min_cube_dist": [
+    0.036204621077249935
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.3136507774905054
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.026843312144063082
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 15,
+   "min_cube_dist": [
+    0.030815819422174817
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.18073994809819033
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.04311292575002259
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03958694292785396
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 22,
+   "min_cube_dist": [
+    0.03491318307419676
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.037567610985786835
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.2410254151164905
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.034434947692903124
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 25,
+   "min_cube_dist": [
+    0.03901592746461133
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 19,
+   "min_cube_dist": [
+    0.013018992449673927
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 11,
+   "min_cube_dist": [
+    0.031018828982163908
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.1215862224268039
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.1728039073426424
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03547621554531639
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.09723421882698481
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03456761909123635
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03894176689584395
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.17697016211203512
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.1415700759145594
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 42,
+   "min_cube_dist": [
+    0.03969241389824631
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.2378199337643072
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.3077532606186146
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 28,
+   "min_cube_dist": [
+    0.03499189637919353
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 8,
+   "min_cube_dist": [
+    0.030873572724032277
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.03820195137985838
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.030076585398010263
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 15,
+   "min_cube_dist": [
+    0.03350016014646459
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.027674792633963767
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.022404671535635173
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.031237657841217202
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.04817060307606929
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.12273453651785597
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.03401123043453458
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 20,
+   "min_cube_dist": [
+    0.03051518260422185
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.1914560598725751
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.10866187899949574
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 15,
+   "min_cube_dist": [
+    0.03535130813911871
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.19188297697233167
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 5,
+   "min_cube_dist": [
+    0.029037112110846152
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 15,
+   "min_cube_dist": [
+    0.03564343240340986
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03935659426686119
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.05661362834547312
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 19,
+   "min_cube_dist": [
+    0.03372062786104479
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.034485472484960665
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 9,
+   "min_cube_dist": [
+    0.03827279996004014
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 22,
+   "min_cube_dist": [
+    0.037635773175589284
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 12,
+   "min_cube_dist": [
+    0.0205635276719288
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.038125854529197284
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.035799907841806033
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.03449948617818193
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.10612221558786471
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.025830989124714914
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.039535984447746114
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.03620594632392782
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 13,
+   "min_cube_dist": [
+    0.0045785091775876014
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.20301927703140046
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03580132912603109
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.03376546971805154
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.023609900747805466
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.2836453667573028
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.24377343242955696
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03488903754230423
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 7,
+   "min_cube_dist": [
+    0.019681046607238132
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.18790801710811586
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.03993697813863615
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.038016219779869034
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 18,
+   "min_cube_dist": [
+    0.03274743405869955
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 6,
+   "min_cube_dist": [
+    0.03051227913167437
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 17,
+   "min_cube_dist": [
+    0.039164759865436306
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 5,
+   "min_cube_dist": [
+    0.025672647435709062
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.03982296809287514
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.24068456875732175
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 28,
+   "min_cube_dist": [
+    0.025900511575983384
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 14,
+   "min_cube_dist": [
+    0.03997670492485312
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": true,
+   "reached": [
+    true
+   ],
+   "steps": 16,
+   "min_cube_dist": [
+    0.03686482228438566
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 1,
+   "length": 25
+  },
+  {
+   "success": false,
+   "reached": [
+    false
+   ],
+   "steps": 50,
+   "min_cube_dist": [
+    0.18443277315380682
+   ],
+   "min_ee_dist": [
+    null
+   ],
+   "plans": 2,
+   "length": 25
+  }
+ ]
+}

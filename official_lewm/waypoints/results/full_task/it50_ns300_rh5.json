@@ -1,0 +1,2119 @@
+{
+ "source": "clean",
+ "iterations": 50,
+ "samples": 300,
+ "replan_after_blocks": 5,
+ "seg_budget": 50,
+ "spacing": 25,
+ "ee_tol": 0.05,
+ "n_episodes": 100,
+ "success_rate": 1.0,
+ "waypoint_rate": 19.999999999999996,
+ "seconds_per_plan": 1.1403706136164458,
+ "plans_per_episode": 5.76,
+ "planning_seconds_per_episode": 6.568534734430727,
+ "steps_per_episode": 140.42,
+ "wall_seconds": 834.9155142307281,
+ "episodes": [
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 147,
+   "min_cube_dist": [
+    2.037031756871698e-11,
+    0.26686167086607,
+    0.19607627475297867
+   ],
+   "min_ee_dist": [
+    0.04044659120592842,
+    0.22101148216644273,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 142,
+   "min_cube_dist": [
+    1.7189162065587936e-10,
+    0.35382056976765125,
+    0.2995726338571434
+   ],
+   "min_ee_dist": [
+    0.045942230167185655,
+    0.2609850834459672,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 124,
+   "min_cube_dist": [
+    0.002186785611251033,
+    0.21362094557437755,
+    0.07922427574189769
+   ],
+   "min_ee_dist": [
+    0.04909527651220631,
+    0.15160712892864286,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 120,
+   "min_cube_dist": [
+    1.6400570489767672e-11,
+    0.30673717361282077,
+    0.12465544548229761
+   ],
+   "min_ee_dist": [
+    0.03978650550507906,
+    0.18848502021384383,
+    null
+   ],
+   "plans": 5,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    5.999429664576436e-10,
+    0.3433060828989939,
+    0.2388599876513479
+   ],
+   "min_ee_dist": [
+    0.35866617556736746,
+    0.3414382310298353,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    4.016159175729557e-10,
+    0.240567528200578,
+    0.05073405999454847
+   ],
+   "min_ee_dist": [
+    0.0499775567433705,
+    0.04594892824268434,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    7.94913683756766e-12,
+    0.33866974761084434,
+    0.3632221496995208
+   ],
+   "min_ee_dist": [
+    0.04428747995783812,
+    0.017457117841768947,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    0.0022437016874426825,
+    0.3937596787218829,
+    0.42933011459595427
+   ],
+   "min_ee_dist": [
+    0.17735820517807763,
+    0.09191468312750756,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    2.867596388436627e-10,
+    0.3790371755085222,
+    0.27050452485953347
+   ],
+   "min_ee_dist": [
+    0.1708442730536289,
+    0.0815457955181694,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 140,
+   "min_cube_dist": [
+    1.9011623626159976e-10,
+    0.2853308340667364,
+    0.0682533278018499
+   ],
+   "min_ee_dist": [
+    0.04562196953697249,
+    0.21140507287876678,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 124,
+   "min_cube_dist": [
+    1.3909204448544007e-10,
+    0.2906235895527126,
+    0.2301602239981118
+   ],
+   "min_ee_dist": [
+    0.04370456584340283,
+    0.0031126580014601665,
+    null
+   ],
+   "plans": 5,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.143404309915762e-09,
+    0.3390583007604624,
+    0.2740263687476641
+   ],
+   "min_ee_dist": [
+    0.17903130743869658,
+    0.21910114389306226,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 123,
+   "min_cube_dist": [
+    2.9508951131787946e-10,
+    0.28628581982476,
+    0.12318897827218775
+   ],
+   "min_ee_dist": [
+    0.04999918855916001,
+    0.016910366403193773,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 123,
+   "min_cube_dist": [
+    2.865207912229741e-10,
+    0.32989376119223396,
+    0.3113575147894615
+   ],
+   "min_ee_dist": [
+    0.04856099444353946,
+    0.020531506468321907,
+    null
+   ],
+   "plans": 5,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    2.0866327688604273e-11,
+    0.3845386112826653,
+    0.3546373083341035
+   ],
+   "min_ee_dist": [
+    0.20433610221206708,
+    0.09154245904664671,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    9.472401073480406e-10,
+    0.30034371423454076,
+    0.2524120104113873
+   ],
+   "min_ee_dist": [
+    0.1452574781146242,
+    0.02824518284042943,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 147,
+   "min_cube_dist": [
+    8.187894806610529e-16,
+    0.3236795239673236,
+    0.29667569382160935
+   ],
+   "min_ee_dist": [
+    0.03895551130062999,
+    0.04021371787926702,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 120,
+   "min_cube_dist": [
+    9.71553880503558e-11,
+    0.24796524127380307,
+    0.1071336199783937
+   ],
+   "min_ee_dist": [
+    0.04463185751750458,
+    0.006761066382136474,
+    null
+   ],
+   "plans": 5,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 127,
+   "min_cube_dist": [
+    1.3720308734025084e-08,
+    0.2296239357522283,
+    0.07816056119622314
+   ],
+   "min_ee_dist": [
+    0.04413386994317222,
+    0.01716180201281854,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 118,
+   "min_cube_dist": [
+    2.0909275401244995e-11,
+    0.30789358695304225,
+    0.28693955143632627
+   ],
+   "min_ee_dist": [
+    0.04083093474751242,
+    0.25226384254255696,
+    null
+   ],
+   "plans": 5,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.1931198244935882e-11,
+    0.3943028232126068,
+    0.3959465244383699
+   ],
+   "min_ee_dist": [
+    0.1951664656241694,
+    0.26810263516287264,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 149,
+   "min_cube_dist": [
+    1.747649642160767e-10,
+    0.3169414837829561,
+    0.14964538163923596
+   ],
+   "min_ee_dist": [
+    0.04978971492104297,
+    0.04083916649707236,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    8.10464622278969e-10,
+    0.3716180458278366,
+    0.5350155682196974
+   ],
+   "min_ee_dist": [
+    0.16784662932831237,
+    0.1013500654735622,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.6249848121282737e-10,
+    0.3135623771672838,
+    0.14219381790866042
+   ],
+   "min_ee_dist": [
+    0.34628054407038156,
+    0.32715536254516736,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    2.0218783507766423e-09,
+    0.21895556485642534,
+    0.07010624555157595
+   ],
+   "min_ee_dist": [
+    0.17521042376091153,
+    0.11399020490467608,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.353129818157582e-10,
+    0.2706704140688334,
+    0.18618196158128164
+   ],
+   "min_ee_dist": [
+    0.24944616598728403,
+    0.10918868241977156,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    3.4423866269746226e-11,
+    0.30605896626293927,
+    0.16691408129113317
+   ],
+   "min_ee_dist": [
+    0.1395194035801137,
+    0.06129386211073192,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    3.3813304933315934e-10,
+    0.2519568902162709,
+    0.10203008070451493
+   ],
+   "min_ee_dist": [
+    0.07033142249018633,
+    0.07577785574473662,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.7157799252971e-11,
+    0.33304597610205505,
+    0.3357391466724584
+   ],
+   "min_ee_dist": [
+    0.1500854605395124,
+    0.03382008060221521,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    9.73704142802024e-10,
+    0.32765685392404936,
+    0.3124556599499478
+   ],
+   "min_ee_dist": [
+    0.25784937440436384,
+    0.16346858977573966,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.9125984653140304e-11,
+    0.36353510175733605,
+    0.4851059906982511
+   ],
+   "min_ee_dist": [
+    0.038890957623233614,
+    0.33968280893361086,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.2722502848567334e-11,
+    0.2846490781174092,
+    0.24182888058022384
+   ],
+   "min_ee_dist": [
+    0.17860288074725703,
+    0.12312459052732729,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    8.441525567544613e-11,
+    0.23804817889280278,
+    0.1643919280938733
+   ],
+   "min_ee_dist": [
+    0.09339080797743862,
+    0.1418911446847468,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 125,
+   "min_cube_dist": [
+    3.632510958695434e-15,
+    0.2939731648174428,
+    0.15191452870760178
+   ],
+   "min_ee_dist": [
+    0.04528090370707499,
+    0.2864019231280492,
+    null
+   ],
+   "plans": 5,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 144,
+   "min_cube_dist": [
+    1.1748667508074862e-10,
+    0.28072537319416585,
+    0.32174682220525
+   ],
+   "min_ee_dist": [
+    0.0461919710310755,
+    0.010863721778722033,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 140,
+   "min_cube_dist": [
+    9.608724423868314e-10,
+    0.3222330138136605,
+    0.30148814831032605
+   ],
+   "min_ee_dist": [
+    0.0470648633198796,
+    0.04209489116061321,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 149,
+   "min_cube_dist": [
+    1.9649146622324154e-11,
+    0.33842751829116857,
+    0.3747489132513881
+   ],
+   "min_ee_dist": [
+    0.04868375607585477,
+    0.057646093292350584,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.2989329758058739e-08,
+    0.30655406105034533,
+    0.15485787163449313
+   ],
+   "min_ee_dist": [
+    0.050306652187474765,
+    0.23243262989216376,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 136,
+   "min_cube_dist": [
+    1.253594703425339e-10,
+    0.29494824673840836,
+    0.11039009337773585
+   ],
+   "min_ee_dist": [
+    0.042434105118813174,
+    0.01897872996666396,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 120,
+   "min_cube_dist": [
+    2.5632131165333538e-11,
+    0.317102979619663,
+    0.26838355459176505
+   ],
+   "min_ee_dist": [
+    0.04178667161026991,
+    0.05198124827375871,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 142,
+   "min_cube_dist": [
+    1.7437745904489174e-09,
+    0.2858720128758837,
+    0.3593596365240649
+   ],
+   "min_ee_dist": [
+    0.046171116148702764,
+    0.022134416771056913,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.854112644817137e-11,
+    0.33831658250627916,
+    0.277346353242156
+   ],
+   "min_ee_dist": [
+    0.13076840000849063,
+    0.270291452280199,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    3.2613948722590395e-10,
+    0.2677941455888472,
+    0.11471993348060232
+   ],
+   "min_ee_dist": [
+    0.3120212721589933,
+    0.29401187423244846,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    2.977802303010848e-10,
+    0.2564083366618066,
+    0.08062056030104119
+   ],
+   "min_ee_dist": [
+    0.10794722149359451,
+    0.0753665248257602,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.2446267941808931e-08,
+    0.3951803710061671,
+    0.4939134742950526
+   ],
+   "min_ee_dist": [
+    0.20711300961077714,
+    0.07606079558566928,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    2.6998619978126526e-10,
+    0.41718806833360256,
+    0.6441363848848242
+   ],
+   "min_ee_dist": [
+    0.06583726504149708,
+    0.2229502858951724,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    4.8960805355380415e-11,
+    0.3257723302511711,
+    0.3902929900742582
+   ],
+   "min_ee_dist": [
+    0.058180063860597514,
+    0.17557288925706283,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 127,
+   "min_cube_dist": [
+    1.6943939169181327e-09,
+    0.2176514170646099,
+    0.14678473316807586
+   ],
+   "min_ee_dist": [
+    0.044749126203235644,
+    0.027258858295072443,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    3.124810264326426e-10,
+    0.3085654833897533,
+    0.13353590273914492
+   ],
+   "min_ee_dist": [
+    0.051206176000569446,
+    0.2702321128578131,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 123,
+   "min_cube_dist": [
+    1.313458296332936e-11,
+    0.2968575585461508,
+    0.10853256462652865
+   ],
+   "min_ee_dist": [
+    0.03757931515820799,
+    0.0423473709742009,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 149,
+   "min_cube_dist": [
+    0.0021964996516103323,
+    0.21635166268026948,
+    0.10855812376017175
+   ],
+   "min_ee_dist": [
+    0.047474664267598964,
+    0.017448090145037808,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 128,
+   "min_cube_dist": [
+    1.6368806490922556e-10,
+    0.39648674826203634,
+    0.32649640757516907
+   ],
+   "min_ee_dist": [
+    0.0475804880665945,
+    0.2132504586826953,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    8.23163072036818e-10,
+    0.25828418844816475,
+    0.20213188110636254
+   ],
+   "min_ee_dist": [
+    0.1064543330340242,
+    0.012706093943789383,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 146,
+   "min_cube_dist": [
+    2.353184490216677e-11,
+    0.2945407979632048,
+    0.1808625708331138
+   ],
+   "min_ee_dist": [
+    0.0476853792450047,
+    0.01310368424803857,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 148,
+   "min_cube_dist": [
+    8.126738332521935e-11,
+    0.35109627938491916,
+    0.2810295259705648
+   ],
+   "min_ee_dist": [
+    0.04695779164363715,
+    0.1556172329756671,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.435718830045294e-10,
+    0.32387670380330297,
+    0.3555817102230866
+   ],
+   "min_ee_dist": [
+    0.22768554706781635,
+    0.15484840900163246,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 119,
+   "min_cube_dist": [
+    9.314526602563688e-11,
+    0.2983153608727032,
+    0.1788718041562923
+   ],
+   "min_ee_dist": [
+    0.046991296701021076,
+    0.008160037135369289,
+    null
+   ],
+   "plans": 5,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 136,
+   "min_cube_dist": [
+    2.195396059953928e-11,
+    0.33586412752864103,
+    0.1912996192073756
+   ],
+   "min_ee_dist": [
+    0.04677010928378887,
+    0.22382529581602414,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    0.0015798742557760052,
+    0.3155600195034799,
+    0.16284082744294012
+   ],
+   "min_ee_dist": [
+    0.06340645239858422,
+    0.2745093445638216,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 134,
+   "min_cube_dist": [
+    3.777581619613455e-10,
+    0.3480888788134866,
+    0.43255359104739016
+   ],
+   "min_ee_dist": [
+    0.04820394833168979,
+    0.03610746914342943,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 142,
+   "min_cube_dist": [
+    7.074202335033419e-15,
+    0.24158116897522025,
+    0.23058542401485727
+   ],
+   "min_ee_dist": [
+    0.049690792253100156,
+    0.03276765384562303,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.8426405340462082e-09,
+    0.3902588682933334,
+    0.5175767547959059
+   ],
+   "min_ee_dist": [
+    0.22144459466523955,
+    0.13212882384109007,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    0.00035504691967721847,
+    0.2741686806798624,
+    0.10216758359562392
+   ],
+   "min_ee_dist": [
+    0.15913535849032676,
+    0.33491850032945675,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 125,
+   "min_cube_dist": [
+    1.866589786885395e-11,
+    0.32577458373238355,
+    0.2671862910705196
+   ],
+   "min_ee_dist": [
+    0.0454273602542537,
+    0.24424678333164151,
+    null
+   ],
+   "plans": 5,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 120,
+   "min_cube_dist": [
+    3.674090918679211e-11,
+    0.21609938826608666,
+    0.06397540664338841
+   ],
+   "min_ee_dist": [
+    0.04998856217249351,
+    0.21274656089513158,
+    null
+   ],
+   "plans": 5,
+   "length": 82
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 124,
+   "min_cube_dist": [
+    1.0229239763930526e-10,
+    0.2504136689373229,
+    0.14920458538494388
+   ],
+   "min_ee_dist": [
+    0.04488815882692745,
+    0.2611748781391817,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    4.3344512924454755e-11,
+    0.37483573961926075,
+    0.3154155688057157
+   ],
+   "min_ee_dist": [
+    0.3306994300569237,
+    0.1436197660003822,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 148,
+   "min_cube_dist": [
+    1.4530641396492022e-08,
+    0.2576857920361996,
+    0.08926663054457026
+   ],
+   "min_ee_dist": [
+    0.03824615583271256,
+    0.2201563196550273,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 147,
+   "min_cube_dist": [
+    0.004522327082080271,
+    0.21467429658587014,
+    0.2087618143012773
+   ],
+   "min_ee_dist": [
+    0.039752947842663304,
+    0.20654063097628542,
+    null
+   ],
+   "plans": 6,
+   "length": 82
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 134,
+   "min_cube_dist": [
+    7.441883578849309e-13,
+    0.27692690625796773,
+    0.19757469437942413
+   ],
+   "min_ee_dist": [
+    0.04720662483767637,
+    0.01349527565238197,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 137,
+   "min_cube_dist": [
+    0.0014441294772745427,
+    0.2571966451416811,
+    0.12982978875631362
+   ],
+   "min_ee_dist": [
+    0.04514236077516419,
+    0.03418339185087915,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    0.0009726861776224026,
+    0.24195343448249437,
+    0.2177035035082878
+   ],
+   "min_ee_dist": [
+    0.10858690492792902,
+    0.2302583723476481,
+    null
+   ],
+   "plans": 6,
+   "length": 82
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.9917560173294866e-11,
+    0.29042637821007544,
+    0.1358010674232466
+   ],
+   "min_ee_dist": [
+    0.04949587270924498,
+    0.009322610244952585,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 137,
+   "min_cube_dist": [
+    1.9537018043938068e-10,
+    0.29645244804510723,
+    0.20225295480709649
+   ],
+   "min_ee_dist": [
+    0.045506163099798214,
+    0.1786603151130052,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 148,
+   "min_cube_dist": [
+    9.235141086450685e-11,
+    0.31341907539312236,
+    0.18325427733466906
+   ],
+   "min_ee_dist": [
+    0.04018015805432842,
+    0.1613714005579986,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 125,
+   "min_cube_dist": [
+    1.2532514659725865e-10,
+    0.2686823071872,
+    0.18301101619292176
+   ],
+   "min_ee_dist": [
+    0.048965357044713824,
+    0.21845929572187694,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    3.1874918764862535e-11,
+    0.28170606227830924,
+    0.19088216736829677
+   ],
+   "min_ee_dist": [
+    0.09024292276787593,
+    0.08395440911575974,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 124,
+   "min_cube_dist": [
+    2.7213362333067632e-11,
+    0.32479342076792544,
+    0.29745842414843127
+   ],
+   "min_ee_dist": [
+    0.04295179074574943,
+    0.2572387935752692,
+    null
+   ],
+   "plans": 5,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 123,
+   "min_cube_dist": [
+    5.768021545108477e-11,
+    0.36506637518400276,
+    0.29555517458887076
+   ],
+   "min_ee_dist": [
+    0.049120820814038346,
+    0.30556496432814884,
+    null
+   ],
+   "plans": 5,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 142,
+   "min_cube_dist": [
+    1.3444704108614918e-10,
+    0.3677824021036827,
+    0.4104236802846881
+   ],
+   "min_ee_dist": [
+    0.04462904962461578,
+    0.10597085738185433,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.2916547858475036e-08,
+    0.30163040182641904,
+    0.21368379263930384
+   ],
+   "min_ee_dist": [
+    0.15448304064883148,
+    0.026726723228201767,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 123,
+   "min_cube_dist": [
+    1.6081961427205719e-10,
+    0.30548086085870585,
+    0.08460989315363136
+   ],
+   "min_ee_dist": [
+    0.04616106144183782,
+    0.0104242245677071,
+    null
+   ],
+   "plans": 5,
+   "length": 79
+  },
+  {
+   "success": true,
+   "reached": [
+    true,
+    false,
+    true
+   ],
+   "steps": 85,
+   "min_cube_dist": [
+    3.0526293997458566e-10,
+    0.050060035513360836,
+    0.0338565728804857
+   ],
+   "min_ee_dist": [
+    0.04460567661797878,
+    0.03560633097865875,
+    null
+   ],
+   "plans": 4,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    7.246624221225458e-10,
+    0.3788457597674676,
+    0.5618993950609618
+   ],
+   "min_ee_dist": [
+    0.1843580705726565,
+    0.08037442479800133,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    3.6889349897658273e-09,
+    0.3821658263841032,
+    0.46637859941320864
+   ],
+   "min_ee_dist": [
+    0.11255625747286961,
+    0.24578606971080386,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 118,
+   "min_cube_dist": [
+    2.0250538614198653e-10,
+    0.18679560631837056,
+    0.15695133959479254
+   ],
+   "min_ee_dist": [
+    0.048921062296941584,
+    0.04585312861899571,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 125,
+   "min_cube_dist": [
+    1.8053811556508834e-10,
+    0.29572019574952385,
+    0.27848634374045006
+   ],
+   "min_ee_dist": [
+    0.03328175709166645,
+    0.01607062270045006,
+    null
+   ],
+   "plans": 5,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 147,
+   "min_cube_dist": [
+    1.7222869474072701e-09,
+    0.29260626347736185,
+    0.2879135374963897
+   ],
+   "min_ee_dist": [
+    0.04790653188368871,
+    0.04808943893654905,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 123,
+   "min_cube_dist": [
+    2.0192181260370035e-15,
+    0.2886525979266431,
+    0.23240141943231266
+   ],
+   "min_ee_dist": [
+    0.04775526581511531,
+    0.2664653210222247,
+    null
+   ],
+   "plans": 5,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 147,
+   "min_cube_dist": [
+    2.528487912790194e-10,
+    0.3186399268328431,
+    0.07557097575139546
+   ],
+   "min_ee_dist": [
+    0.04596168461642923,
+    0.2527760368720576,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 121,
+   "min_cube_dist": [
+    0.00020925929983466236,
+    0.3597463524180979,
+    0.3964492479070687
+   ],
+   "min_ee_dist": [
+    0.045823248037516424,
+    0.20255477049730922,
+    null
+   ],
+   "plans": 5,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.8586906289226536e-11,
+    0.2979042420931519,
+    0.13985588384673658
+   ],
+   "min_ee_dist": [
+    0.07784845841694026,
+    0.051139834027721244,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 147,
+   "min_cube_dist": [
+    2.017191335685116e-10,
+    0.31653341596618306,
+    0.31651123877051107
+   ],
+   "min_ee_dist": [
+    0.041596357576875895,
+    0.11350183345919222,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.0061701678857323e-10,
+    0.24008109619052104,
+    0.11686055959280159
+   ],
+   "min_ee_dist": [
+    0.14274226679444849,
+    0.10916577704489822,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.8180901124823482e-11,
+    0.23728081680978844,
+    0.10138578386177756
+   ],
+   "min_ee_dist": [
+    0.07661391524652808,
+    0.04196178173961106,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    1.2344082590722408e-09,
+    0.40534538543336907,
+    0.5066667579779052
+   ],
+   "min_ee_dist": [
+    0.3028523678021228,
+    0.21898159578530893,
+    null
+   ],
+   "plans": 6,
+   "length": 80
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 143,
+   "min_cube_dist": [
+    5.371021843297788e-11,
+    0.27473960159010824,
+    0.09153786260968873
+   ],
+   "min_ee_dist": [
+    0.04924959758575295,
+    0.01861039745248528,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 137,
+   "min_cube_dist": [
+    2.33190458991814e-10,
+    0.27655365260185016,
+    0.1985738680624641
+   ],
+   "min_ee_dist": [
+    0.04922773425022289,
+    0.2529392588666461,
+    null
+   ],
+   "plans": 6,
+   "length": 81
+  },
+  {
+   "success": false,
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "steps": 150,
+   "min_cube_dist": [
+    2.0309151492133387e-11,
+    0.26396665082168597,
+    0.1581163624214496
+   ],
+   "min_ee_dist": [
+    0.0954824269750511,
+    0.28871221274216735,
+    null
+   ],
+   "plans": 6,
+   "length": 79
+  },
+  {
+   "success": false,
+   "reached": [
+    true,
+    false,
+    false
+   ],
+   "steps": 130,
+   "min_cube_dist": [
+    1.6708740518176576e-11,
+    0.2932412439788208,
+    0.18339864562318375
+   ],
+   "min_ee_dist": [
+    0.04746859702371161,
+    0.008543618677016432,
+    null
+   ],
+   "plans": 6,
+   "length": 78
+  }
+ ]
+}

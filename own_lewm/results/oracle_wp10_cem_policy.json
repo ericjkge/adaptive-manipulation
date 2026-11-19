@@ -1,0 +1,32 @@
+{
+ "task1": 38.0,
+ "task2": 10.0,
+ "task3": 16.0,
+ "task4": 0.0,
+ "task5": 0.0,
+ "mean": 12.8,
+ "controller": "cem_mix",
+ "env": "visual-cube-single-v0",
+ "episodes_per_task": 50,
+ "seconds_per_query": 0.2725123077406919,
+ "expert_success": 97.6,
+ "expert_len": 64.132,
+ "args": {
+  "env": "visual-cube-single-v0",
+  "controller": "cem_mix",
+  "lewm": "/workspace/runs/ckpt/lewm_cube_single/lewm_final.pt",
+  "gcbc": "/workspace/runs/ckpt/gcbc_cube_single/gcbc_500000.pt",
+  "episodes": 50,
+  "samples": 300,
+  "n_policy": 200,
+  "policy_std": 0.3,
+  "iters": 30,
+  "topk": 30,
+  "horizon": 2,
+  "lookahead": 10,
+  "search": 20,
+  "execute": "best",
+  "seed": 0,
+  "out": "/workspace/runs/eval/wp_cem_mix_best.json"
+ }
+}

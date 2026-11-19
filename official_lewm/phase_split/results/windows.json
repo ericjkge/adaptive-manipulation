@@ -1,0 +1,2102 @@
+[
+ {
+  "seed": 42,
+  "row": 128267,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.346780978216777
+ },
+ {
+  "seed": 42,
+  "row": 136513,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.28485682504641224
+ },
+ {
+  "seed": 42,
+  "row": 172735,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.363586734540915e-12
+ },
+ {
+  "seed": 42,
+  "row": 179377,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 42,
+  "row": 185182,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.07631030099314938
+ },
+ {
+  "seed": 42,
+  "row": 189273,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.2248113738452714
+ },
+ {
+  "seed": 42,
+  "row": 257500,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2434697527034916
+ },
+ {
+  "seed": 42,
+  "row": 332101,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.2688849226782974
+ },
+ {
+  "seed": 42,
+  "row": 366907,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 42,
+  "row": 404927,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2869711752836931
+ },
+ {
+  "seed": 42,
+  "row": 456735,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.07236500880813385
+ },
+ {
+  "seed": 42,
+  "row": 556268,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.10771981077039793
+ },
+ {
+  "seed": 42,
+  "row": 712588,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.24038318293286065
+ },
+ {
+  "seed": 42,
+  "row": 745268,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.7744116004366763e-09
+ },
+ {
+  "seed": 42,
+  "row": 808839,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.17449549728106983
+ },
+ {
+  "seed": 42,
+  "row": 870336,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.025664437929222485
+ },
+ {
+  "seed": 42,
+  "row": 882105,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.28008893809184177
+ },
+ {
+  "seed": 42,
+  "row": 891249,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.17462972206715402
+ },
+ {
+  "seed": 42,
+  "row": 895808,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.006378094851092041
+ },
+ {
+  "seed": 42,
+  "row": 905240,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.20023458913418496
+ },
+ {
+  "seed": 42,
+  "row": 905399,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.023300004580175414
+ },
+ {
+  "seed": 42,
+  "row": 1005679,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 8.611983195540143e-12
+ },
+ {
+  "seed": 42,
+  "row": 1031561,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.36942138006511877
+ },
+ {
+  "seed": 42,
+  "row": 1058181,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.3142619402728082
+ },
+ {
+  "seed": 42,
+  "row": 1096293,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.19199065947336108
+ },
+ {
+  "seed": 42,
+  "row": 1114684,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.19246598817650787
+ },
+ {
+  "seed": 42,
+  "row": 1269622,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.18555786223314646
+ },
+ {
+  "seed": 42,
+  "row": 1294136,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.11400335384405384
+ },
+ {
+  "seed": 42,
+  "row": 1315639,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.006994321530545226
+ },
+ {
+  "seed": 42,
+  "row": 1362611,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.27113149476597626
+ },
+ {
+  "seed": 42,
+  "row": 1401662,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.004345055949200767
+ },
+ {
+  "seed": 42,
+  "row": 1408039,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.3796946938504807
+ },
+ {
+  "seed": 42,
+  "row": 1442084,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2830968776887556
+ },
+ {
+  "seed": 42,
+  "row": 1478821,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.034018754555787574
+ },
+ {
+  "seed": 42,
+  "row": 1523727,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.144864846669764
+ },
+ {
+  "seed": 42,
+  "row": 1529852,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.16462262808884298
+ },
+ {
+  "seed": 42,
+  "row": 1555599,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.0781857138650373
+ },
+ {
+  "seed": 42,
+  "row": 1564529,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.06373502883209317
+ },
+ {
+  "seed": 42,
+  "row": 1570913,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.11577256363058429
+ },
+ {
+  "seed": 42,
+  "row": 1579945,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 42,
+  "row": 1653716,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.006168099201506499
+ },
+ {
+  "seed": 42,
+  "row": 1663520,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.23738257915550096
+ },
+ {
+  "seed": 42,
+  "row": 1687855,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.07107936136103729
+ },
+ {
+  "seed": 42,
+  "row": 1725130,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.043769488834449595
+ },
+ {
+  "seed": 42,
+  "row": 1725718,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.27339877509651295
+ },
+ {
+  "seed": 42,
+  "row": 1784621,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.13560986442945192
+ },
+ {
+  "seed": 42,
+  "row": 1795165,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.2793423128824141
+ },
+ {
+  "seed": 42,
+  "row": 1862756,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0015382908975175831
+ },
+ {
+  "seed": 42,
+  "row": 1951073,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 3.808239201451685e-15
+ },
+ {
+  "seed": 42,
+  "row": 1960957,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.008362081683937003
+ },
+ {
+  "seed": 0,
+  "row": 5494,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.006324024129462598
+ },
+ {
+  "seed": 0,
+  "row": 10745,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.010467840517389883
+ },
+ {
+  "seed": 0,
+  "row": 16630,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.0945931181169538
+ },
+ {
+  "seed": 0,
+  "row": 33212,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.27812578607424604
+ },
+ {
+  "seed": 0,
+  "row": 44424,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0011806671580328455
+ },
+ {
+  "seed": 0,
+  "row": 56917,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.25014275422183724
+ },
+ {
+  "seed": 0,
+  "row": 67484,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.06557894533652836
+ },
+ {
+  "seed": 0,
+  "row": 82336,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.1471981030301074
+ },
+ {
+  "seed": 0,
+  "row": 151219,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0024114904332278105
+ },
+ {
+  "seed": 0,
+  "row": 161577,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 0,
+  "row": 179443,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.015143364772878538
+ },
+ {
+  "seed": 0,
+  "row": 249787,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.12086247517313298
+ },
+ {
+  "seed": 0,
+  "row": 352263,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.24562290581858123
+ },
+ {
+  "seed": 0,
+  "row": 353050,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.03136214506565207
+ },
+ {
+  "seed": 0,
+  "row": 517147,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 0,
+  "row": 542236,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.2705460640408596
+ },
+ {
+  "seed": 0,
+  "row": 557447,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.1825423533377667e-10
+ },
+ {
+  "seed": 0,
+  "row": 602414,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2217187234918487
+ },
+ {
+  "seed": 0,
+  "row": 618715,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.329032748509036
+ },
+ {
+  "seed": 0,
+  "row": 792217,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.0575283429156717e-11
+ },
+ {
+  "seed": 0,
+  "row": 810495,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.04323714804100113
+ },
+ {
+  "seed": 0,
+  "row": 849574,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.05920561319269612
+ },
+ {
+  "seed": 0,
+  "row": 966912,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.14531552980070908
+ },
+ {
+  "seed": 0,
+  "row": 1012264,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.3189149876938815
+ },
+ {
+  "seed": 0,
+  "row": 1027350,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.19904274394915542
+ },
+ {
+  "seed": 0,
+  "row": 1056485,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.26235326406601683
+ },
+ {
+  "seed": 0,
+  "row": 1088313,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.06422886482897655
+ },
+ {
+  "seed": 0,
+  "row": 1092662,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.3174981632913782
+ },
+ {
+  "seed": 0,
+  "row": 1114155,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.14355026376075722
+ },
+ {
+  "seed": 0,
+  "row": 1125411,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.12640042186052172
+ },
+ {
+  "seed": 0,
+  "row": 1219306,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.3628129138430431
+ },
+ {
+  "seed": 0,
+  "row": 1236902,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.06911614449203905
+ },
+ {
+  "seed": 0,
+  "row": 1270825,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.15660156512265772
+ },
+ {
+  "seed": 0,
+  "row": 1280246,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.4665287785981087e-13
+ },
+ {
+  "seed": 0,
+  "row": 1300826,
+  "success": 1,
+  "phase": "other",
+  "cube_moved": 0.01106410244752655
+ },
+ {
+  "seed": 0,
+  "row": 1305295,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.1846647526726067e-05
+ },
+ {
+  "seed": 0,
+  "row": 1347945,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.22075464531132005
+ },
+ {
+  "seed": 0,
+  "row": 1348423,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.27819481605305096
+ },
+ {
+  "seed": 0,
+  "row": 1466238,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.10780137104068514
+ },
+ {
+  "seed": 0,
+  "row": 1466578,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 0,
+  "row": 1537389,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.18007875834416695
+ },
+ {
+  "seed": 0,
+  "row": 1634622,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.006173039207369267
+ },
+ {
+  "seed": 0,
+  "row": 1639828,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 4.104493883206249e-06
+ },
+ {
+  "seed": 0,
+  "row": 1701580,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.23898518480630543
+ },
+ {
+  "seed": 0,
+  "row": 1709706,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0033141783746058282
+ },
+ {
+  "seed": 0,
+  "row": 1723335,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.1489779032062975e-12
+ },
+ {
+  "seed": 0,
+  "row": 1734955,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.12705875014124474
+ },
+ {
+  "seed": 0,
+  "row": 1834589,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.06792590796958942
+ },
+ {
+  "seed": 0,
+  "row": 1879448,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.08140089112941434
+ },
+ {
+  "seed": 0,
+  "row": 1951147,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.18676732492480638
+ },
+ {
+  "seed": 1,
+  "row": 39837,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.1970413952324911
+ },
+ {
+  "seed": 1,
+  "row": 55378,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.21282319023891966
+ },
+ {
+  "seed": 1,
+  "row": 70038,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 1,
+  "row": 124655,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.1959031978734805
+ },
+ {
+  "seed": 1,
+  "row": 172323,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.019135088654140524
+ },
+ {
+  "seed": 1,
+  "row": 235035,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.008769748973594057
+ },
+ {
+  "seed": 1,
+  "row": 249068,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.29552873151938547
+ },
+ {
+  "seed": 1,
+  "row": 250078,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.2883341945103297
+ },
+ {
+  "seed": 1,
+  "row": 269411,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 3.5271371456962116e-06
+ },
+ {
+  "seed": 1,
+  "row": 289739,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.08573909584431766
+ },
+ {
+  "seed": 1,
+  "row": 408928,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.041710044019403515
+ },
+ {
+  "seed": 1,
+  "row": 500931,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.45875937924791127
+ },
+ {
+  "seed": 1,
+  "row": 516521,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.010997970505332457
+ },
+ {
+  "seed": 1,
+  "row": 527243,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.34717711881481644
+ },
+ {
+  "seed": 1,
+  "row": 549042,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2773448712665385
+ },
+ {
+  "seed": 1,
+  "row": 563617,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.12064346934683103
+ },
+ {
+  "seed": 1,
+  "row": 609391,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 3.637338587677578e-05
+ },
+ {
+  "seed": 1,
+  "row": 626760,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.21271375291343178
+ },
+ {
+  "seed": 1,
+  "row": 662744,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.31673306940781937
+ },
+ {
+  "seed": 1,
+  "row": 770447,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.14164918459842368
+ },
+ {
+  "seed": 1,
+  "row": 810247,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.1658885884663668
+ },
+ {
+  "seed": 1,
+  "row": 822451,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.0759436437419779e-08
+ },
+ {
+  "seed": 1,
+  "row": 850863,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.30540578080001585
+ },
+ {
+  "seed": 1,
+  "row": 909855,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.17576085001091613
+ },
+ {
+  "seed": 1,
+  "row": 911497,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 6.5832102444222855e-12
+ },
+ {
+  "seed": 1,
+  "row": 951063,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.22005316046824866
+ },
+ {
+  "seed": 1,
+  "row": 975208,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 9.903628923960971e-07
+ },
+ {
+  "seed": 1,
+  "row": 1001458,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 4.80180870800566e-12
+ },
+ {
+  "seed": 1,
+  "row": 1009518,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.07594128795957726
+ },
+ {
+  "seed": 1,
+  "row": 1028730,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.09624014269075577
+ },
+ {
+  "seed": 1,
+  "row": 1081642,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.09667311631310284
+ },
+ {
+  "seed": 1,
+  "row": 1104641,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.11793838773877643
+ },
+ {
+  "seed": 1,
+  "row": 1294067,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.31389792110114456
+ },
+ {
+  "seed": 1,
+  "row": 1505694,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0054726321079507124
+ },
+ {
+  "seed": 1,
+  "row": 1508210,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2369897170137982
+ },
+ {
+  "seed": 1,
+  "row": 1514536,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.1846647526726067e-05
+ },
+ {
+  "seed": 1,
+  "row": 1517833,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 1,
+  "row": 1584716,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.25886780286885364
+ },
+ {
+  "seed": 1,
+  "row": 1643232,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.1749372985279724
+ },
+ {
+  "seed": 1,
+  "row": 1654069,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.3081379475619466
+ },
+ {
+  "seed": 1,
+  "row": 1663625,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.06092213922599294
+ },
+ {
+  "seed": 1,
+  "row": 1684103,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.1822103283805436
+ },
+ {
+  "seed": 1,
+  "row": 1739784,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.18560196689848096
+ },
+ {
+  "seed": 1,
+  "row": 1746699,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.09221932779150276
+ },
+ {
+  "seed": 1,
+  "row": 1816751,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2498272688935851
+ },
+ {
+  "seed": 1,
+  "row": 1906732,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.38800973788474646
+ },
+ {
+  "seed": 1,
+  "row": 1910371,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.003423528718087549
+ },
+ {
+  "seed": 1,
+  "row": 1932915,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.10027870565207599
+ },
+ {
+  "seed": 1,
+  "row": 1963536,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 8.673617379884035e-17
+ },
+ {
+  "seed": 1,
+  "row": 1971269,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.05730769090584977
+ },
+ {
+  "seed": 2,
+  "row": 79939,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.15586658222926333
+ },
+ {
+  "seed": 2,
+  "row": 110831,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 2,
+  "row": 184743,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2953532602581832
+ },
+ {
+  "seed": 2,
+  "row": 219697,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.005783570850583121
+ },
+ {
+  "seed": 2,
+  "row": 301605,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2122709461969572
+ },
+ {
+  "seed": 2,
+  "row": 376362,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.00028981305222668943
+ },
+ {
+  "seed": 2,
+  "row": 377648,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 2,
+  "row": 404697,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 2,
+  "row": 441656,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.12829240250787952
+ },
+ {
+  "seed": 2,
+  "row": 525824,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.04443011045254308
+ },
+ {
+  "seed": 2,
+  "row": 552662,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.31063717693488896
+ },
+ {
+  "seed": 2,
+  "row": 599930,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.07934554317805328
+ },
+ {
+  "seed": 2,
+  "row": 614428,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 2,
+  "row": 639462,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 8.673617379884035e-17
+ },
+ {
+  "seed": 2,
+  "row": 669278,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.053308052150946944
+ },
+ {
+  "seed": 2,
+  "row": 673080,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.19630650271022754
+ },
+ {
+  "seed": 2,
+  "row": 695362,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.19684909154290578
+ },
+ {
+  "seed": 2,
+  "row": 764120,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.17516653554474093
+ },
+ {
+  "seed": 2,
+  "row": 787154,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.21623092378731854
+ },
+ {
+  "seed": 2,
+  "row": 831743,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.004688977356613573
+ },
+ {
+  "seed": 2,
+  "row": 849766,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.1735241906794567
+ },
+ {
+  "seed": 2,
+  "row": 869568,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.27901639673326345
+ },
+ {
+  "seed": 2,
+  "row": 907015,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.15146944586062697
+ },
+ {
+  "seed": 2,
+  "row": 1027222,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2598820042344478
+ },
+ {
+  "seed": 2,
+  "row": 1122008,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.38548377235504644
+ },
+ {
+  "seed": 2,
+  "row": 1130121,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.06781110897378136
+ },
+ {
+  "seed": 2,
+  "row": 1165251,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.15795996406158677
+ },
+ {
+  "seed": 2,
+  "row": 1206152,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.035757303503603524
+ },
+ {
+  "seed": 2,
+  "row": 1272666,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.24022197406196705
+ },
+ {
+  "seed": 2,
+  "row": 1321411,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.2036568230145174
+ },
+ {
+  "seed": 2,
+  "row": 1345247,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0009522399643374251
+ },
+ {
+  "seed": 2,
+  "row": 1364191,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0007532610396513599
+ },
+ {
+  "seed": 2,
+  "row": 1372933,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.22727025142529317
+ },
+ {
+  "seed": 2,
+  "row": 1391823,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.12114329997407927
+ },
+ {
+  "seed": 2,
+  "row": 1464363,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 4.132311779763122e-13
+ },
+ {
+  "seed": 2,
+  "row": 1505809,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2581561250101989
+ },
+ {
+  "seed": 2,
+  "row": 1558864,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2658989142388506
+ },
+ {
+  "seed": 2,
+  "row": 1634455,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.19233509770181473
+ },
+ {
+  "seed": 2,
+  "row": 1636550,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.07201614883767826
+ },
+ {
+  "seed": 2,
+  "row": 1683465,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0024551241320771196
+ },
+ {
+  "seed": 2,
+  "row": 1744425,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.04154539619923205
+ },
+ {
+  "seed": 2,
+  "row": 1762812,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.2647208455093469
+ },
+ {
+  "seed": 2,
+  "row": 1769219,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.24869904844024535
+ },
+ {
+  "seed": 2,
+  "row": 1791323,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.09453674450325601
+ },
+ {
+  "seed": 2,
+  "row": 1823919,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.34903242103927096
+ },
+ {
+  "seed": 2,
+  "row": 1879221,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.5123116561179775e-06
+ },
+ {
+  "seed": 2,
+  "row": 1899908,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.1651548877295922
+ },
+ {
+  "seed": 2,
+  "row": 1944519,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.3280819717107721
+ },
+ {
+  "seed": 2,
+  "row": 1962974,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.046103471928056104
+ },
+ {
+  "seed": 2,
+  "row": 1995593,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.009290190801336962
+ },
+ {
+  "seed": 3,
+  "row": 2972,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0004638850462498747
+ },
+ {
+  "seed": 3,
+  "row": 65680,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0008497022130973216
+ },
+ {
+  "seed": 3,
+  "row": 79165,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 3,
+  "row": 86635,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0035820036082867567
+ },
+ {
+  "seed": 3,
+  "row": 154598,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.26559057607307535
+ },
+ {
+  "seed": 3,
+  "row": 172138,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 3,
+  "row": 189187,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.4347816282472155
+ },
+ {
+  "seed": 3,
+  "row": 228459,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.17514438587169684
+ },
+ {
+  "seed": 3,
+  "row": 279908,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.22621088245189208
+ },
+ {
+  "seed": 3,
+  "row": 321059,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.048557000445470205
+ },
+ {
+  "seed": 3,
+  "row": 347381,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.15450218970494653
+ },
+ {
+  "seed": 3,
+  "row": 360657,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.05432348732481214
+ },
+ {
+  "seed": 3,
+  "row": 364518,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.1834849928577474
+ },
+ {
+  "seed": 3,
+  "row": 475975,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.05216140819276861
+ },
+ {
+  "seed": 3,
+  "row": 532192,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.12667985896172762
+ },
+ {
+  "seed": 3,
+  "row": 571214,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 3,
+  "row": 588360,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.42753449812682054
+ },
+ {
+  "seed": 3,
+  "row": 599784,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 5.112193440591495e-05
+ },
+ {
+  "seed": 3,
+  "row": 631089,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.04657195935321946
+ },
+ {
+  "seed": 3,
+  "row": 643149,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.025548324992374485
+ },
+ {
+  "seed": 3,
+  "row": 667686,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 3.2206495304496235e-12
+ },
+ {
+  "seed": 3,
+  "row": 786350,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.16065403249742108
+ },
+ {
+  "seed": 3,
+  "row": 844414,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.1022718779753328
+ },
+ {
+  "seed": 3,
+  "row": 865544,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.1871616597572474
+ },
+ {
+  "seed": 3,
+  "row": 870561,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.30017900577729895
+ },
+ {
+  "seed": 3,
+  "row": 908754,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.20562404801184933
+ },
+ {
+  "seed": 3,
+  "row": 962862,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.0859371689806736e-07
+ },
+ {
+  "seed": 3,
+  "row": 1038623,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.17006526434821842
+ },
+ {
+  "seed": 3,
+  "row": 1170105,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 3,
+  "row": 1179426,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 6.7024618453880234e-06
+ },
+ {
+  "seed": 3,
+  "row": 1248637,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.24487989392365067
+ },
+ {
+  "seed": 3,
+  "row": 1303558,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 8.393058825073169e-08
+ },
+ {
+  "seed": 3,
+  "row": 1307203,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.07140947257325203
+ },
+ {
+  "seed": 3,
+  "row": 1339307,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.3265179913616886
+ },
+ {
+  "seed": 3,
+  "row": 1389720,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.03417688704155699
+ },
+ {
+  "seed": 3,
+  "row": 1399381,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2384092564615424
+ },
+ {
+  "seed": 3,
+  "row": 1476456,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2361452440545787
+ },
+ {
+  "seed": 3,
+  "row": 1483029,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.2217085918384842
+ },
+ {
+  "seed": 3,
+  "row": 1521024,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.13710041177650964
+ },
+ {
+  "seed": 3,
+  "row": 1580223,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 4.2340857329438295e-09
+ },
+ {
+  "seed": 3,
+  "row": 1610507,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.018892618235787202
+ },
+ {
+  "seed": 3,
+  "row": 1631057,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.11017499702790103
+ },
+ {
+  "seed": 3,
+  "row": 1747111,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.21270318582983042
+ },
+ {
+  "seed": 3,
+  "row": 1747181,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.003075409734350186
+ },
+ {
+  "seed": 3,
+  "row": 1784497,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.24139417997040272
+ },
+ {
+  "seed": 3,
+  "row": 1792335,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.24046676343676116
+ },
+ {
+  "seed": 3,
+  "row": 1886883,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.06747866626713886
+ },
+ {
+  "seed": 3,
+  "row": 1897179,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.15247684970426859
+ },
+ {
+  "seed": 3,
+  "row": 1922062,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.1546777327225397
+ },
+ {
+  "seed": 3,
+  "row": 1956633,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.09619565887475406
+ },
+ {
+  "seed": 4,
+  "row": 121687,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 5.898059818321144e-17
+ },
+ {
+  "seed": 4,
+  "row": 162467,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.0921806732909982
+ },
+ {
+  "seed": 4,
+  "row": 181364,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.06289159184727482
+ },
+ {
+  "seed": 4,
+  "row": 268101,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.3072353569712705e-14
+ },
+ {
+  "seed": 4,
+  "row": 280269,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.1249558357302684e-12
+ },
+ {
+  "seed": 4,
+  "row": 350787,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.2965481855086221
+ },
+ {
+  "seed": 4,
+  "row": 357136,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.6532313438591713e-06
+ },
+ {
+  "seed": 4,
+  "row": 417557,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 2.7755575615628914e-17
+ },
+ {
+  "seed": 4,
+  "row": 441484,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0026538753662498906
+ },
+ {
+  "seed": 4,
+  "row": 569073,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.4327337359236571
+ },
+ {
+  "seed": 4,
+  "row": 610890,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.23160549135030775
+ },
+ {
+  "seed": 4,
+  "row": 679752,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 4,
+  "row": 743135,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.19428185002124884
+ },
+ {
+  "seed": 4,
+  "row": 756701,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.28227756133897663
+ },
+ {
+  "seed": 4,
+  "row": 820568,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 4,
+  "row": 865262,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.4988683150475421e-05
+ },
+ {
+  "seed": 4,
+  "row": 911556,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2886530709914533
+ },
+ {
+  "seed": 4,
+  "row": 932730,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.00265954149972221
+ },
+ {
+  "seed": 4,
+  "row": 959052,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 3.122502256758253e-17
+ },
+ {
+  "seed": 4,
+  "row": 1000696,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.292073025539784
+ },
+ {
+  "seed": 4,
+  "row": 1027737,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.28711008881528094
+ },
+ {
+  "seed": 4,
+  "row": 1047669,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.12148397207214437
+ },
+ {
+  "seed": 4,
+  "row": 1093295,
+  "success": 0,
+  "phase": "place",
+  "cube_moved": 0.16759901946078612
+ },
+ {
+  "seed": 4,
+  "row": 1152685,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.024333367415740822
+ },
+ {
+  "seed": 4,
+  "row": 1167568,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 6.264580691590345e-06
+ },
+ {
+  "seed": 4,
+  "row": 1184633,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.1875852205407873
+ },
+ {
+  "seed": 4,
+  "row": 1220746,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.2547036526539137e-08
+ },
+ {
+  "seed": 4,
+  "row": 1223772,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 4,
+  "row": 1260166,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.06749061381278564
+ },
+ {
+  "seed": 4,
+  "row": 1337953,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.087094391488412
+ },
+ {
+  "seed": 4,
+  "row": 1358672,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.29270835383835614
+ },
+ {
+  "seed": 4,
+  "row": 1416755,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.22546418076834215
+ },
+ {
+  "seed": 4,
+  "row": 1460102,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.1980092628133101
+ },
+ {
+  "seed": 4,
+  "row": 1472637,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.2576086115668444
+ },
+ {
+  "seed": 4,
+  "row": 1585753,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.02130475390893966
+ },
+ {
+  "seed": 4,
+  "row": 1611766,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.07548461082520823
+ },
+ {
+  "seed": 4,
+  "row": 1751949,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.34111350384696476
+ },
+ {
+  "seed": 4,
+  "row": 1771539,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.1702873696635656
+ },
+ {
+  "seed": 4,
+  "row": 1804061,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 4,
+  "row": 1813422,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 5.112193440591842e-05
+ },
+ {
+  "seed": 4,
+  "row": 1867322,
+  "success": 0,
+  "phase": "carry",
+  "cube_moved": 0.4093483853342473
+ },
+ {
+  "seed": 4,
+  "row": 1868983,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 4,
+  "row": 1890227,
+  "success": 0,
+  "phase": "grasp_lift",
+  "cube_moved": 0.32512932954432344
+ },
+ {
+  "seed": 4,
+  "row": 1895002,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 0.0
+ },
+ {
+  "seed": 4,
+  "row": 1895482,
+  "success": 1,
+  "phase": "place",
+  "cube_moved": 0.22843964836494132
+ },
+ {
+  "seed": 4,
+  "row": 1938523,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 1.1622981283243308e-14
+ },
+ {
+  "seed": 4,
+  "row": 1947530,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.3025267248517926
+ },
+ {
+  "seed": 4,
+  "row": 1950210,
+  "success": 1,
+  "phase": "grasp_lift",
+  "cube_moved": 0.27443823585853994
+ },
+ {
+  "seed": 4,
+  "row": 1962194,
+  "success": 1,
+  "phase": "carry",
+  "cube_moved": 0.2794106471235747
+ },
+ {
+  "seed": 4,
+  "row": 1978113,
+  "success": 1,
+  "phase": "free",
+  "cube_moved": 5.17779191854487e-06
+ }
+]

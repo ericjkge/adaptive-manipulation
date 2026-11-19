@@ -1,0 +1,27 @@
+{
+ "task1": 34.0,
+ "task2": 22.0,
+ "task3": 14.000000000000002,
+ "task4": 14.000000000000002,
+ "task5": 24.0,
+ "mean": 21.6,
+ "controller": "gcbc",
+ "env": "visual-cube-single-v0",
+ "episodes_per_task": 50,
+ "seconds_per_query": 0.005153265016569328,
+ "args": {
+  "env": "visual-cube-single-v0",
+  "controller": "gcbc",
+  "gcbc": "/workspace/runs/gcbc_cube_single/gcbc_500000.pt",
+  "lewm": null,
+  "episodes": 50,
+  "exec": 5,
+  "samples": 300,
+  "iters": 30,
+  "topk": 30,
+  "horizon": 5,
+  "replan": 5,
+  "seed": 0,
+  "out": "/workspace/runs/eval/gcbc_exec5.json"
+ }
+}

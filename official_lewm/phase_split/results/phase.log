@@ -1,0 +1,13 @@
+columns: ['action', 'control', 'ep_idx', 'ep_len', 'ep_offset', 'id', 'observation', 'pixels', 'prev_qpos', 'prev_qvel', 'privileged_block_0_pos', 'privileged_block_0_quat', 'privileged_block_0_yaw', 'privileged_target_block', 'privileged_target_block_pos', 'privileged_target_block_yaw', 'privileged_target_task', 'proprio_effector_pos', 'proprio_effector_yaw', 'proprio_gripper_contact', 'proprio_gripper_opening', 'proprio_gripper_vel', 'proprio_joint_pos', 'proprio_joint_vel', 'qpos', 'qvel', 'render_time', 'reward', 'step_idx', 'success', 'target', 'terminated', 'time', 'truncated']
+cube column: privileged_block_0_pos
+cube rest height 0.0200
+
+phase           n   success
+free           88      100%
+grasp_lift     88       36%
+carry          41       56%
+place          82       78%
+other           1      100%
+contact       212       57%
+all           300       69%
+PHASE_DONE

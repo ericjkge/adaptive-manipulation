@@ -1,51 +1,82 @@
-# Adaptive Planning for Real-Time Robot Manipulation
+# Hierarchical World-Model Planning for Cube Pick-and-Place
 
-MIT 6.4212 final project (Fall 2026). We study when a robot should spend more compute on planning. A learned
-gate will choose the planning budget at each step for a world-model planner, under a time cost.
+MIT 6.4212 final project (Fall 2026). Can a hierarchical planner solve long-horizon (200-step) pick-and-place from
+pixels on OGBench `visual-cube-single`?
 
-## Current setup
+**The hierarchy:**
+- **High level:** a waypoint generator proposes a latent subgoal 5 or 10 steps ahead.
+- **Low level:** CEM in [LeWM](https://arxiv.org/abs/2603.19312) latent space picks the action chunk whose predicted
+  outcome is closest to the waypoint. A GCBC policy optionally proposes candidate chunks.
+- **Execution:** run one chunk, then replan.
 
-- **World model:** [LeWorldModel (LeWM)](https://arxiv.org/abs/2603.19312), a 15M-parameter JEPA trained from pixels.
-- **Planner:** the cross-entropy method (CEM) in LeWM's latent space, with model-predictive control. Each plan is
-  5 action blocks of 5 steps; the cost is the distance between the predicted final latent and the goal image's latent.
-- **Tasks:** Push-T and OGBench-Cube, using the authors' pretrained checkpoints and eval protocol.
-- **Knobs:** CEM iterations, CEM samples, and how many blocks run before replanning.
+**Two open problems:**
+1. **Learned waypoints are weak:** flow waypoints get 8% vs. 23% with oracle waypoints.
+2. **LeWM adds little over the policy:** 23% vs. 21.6% for the policy alone. Its errors concentrate in the contact
+   phases.
 
-## Results so far: fixed-budget sweep (no gate)
+## Manipulation phases
 
-Open [`dashboard/index.html`](dashboard/index.html) in a browser for interactive charts. All numbers are
-50 episodes per config, so each rate is uncertain by about ±7 points.
+We split every pick-and-place into phases by whether the cube is resting on the table or lifted (more than 1 cm
+above its rest height), at the start and at the end of a window:
 
-| Task | Setting | Success |
+| Phase | Cube at start → end | What happens |
 |---|---|---|
-| Push-T | Paper setting: 30 iterations × 300 samples, replan after 5 blocks | 94% (paper ~96%) |
-| Push-T | 10 × 300, replan after 5 blocks | 90%, at 38% of the planning time |
-| Push-T | Best of 12 budgets when replanning after every block | 44% |
-| Cube | Paper setting: 10 × 300, replan after 5 blocks | 72% (paper ~74%) |
-| Cube | 3 × 300, replan after 5 blocks | 72%, at 39% of the planning time |
+| Approach | resting | the arm moves to the cube |
+| Grasp | resting | the gripper closes on the cube |
+| Lift | resting → lifted | the cube is picked up |
+| Carry | lifted → lifted | the cube moves through the air |
+| Place | lifted → resting | the cube is set down |
+| Release | resting | the gripper opens and lets go of the cube |
+| Retreat | resting | the arm moves away from the cube |
 
-Main findings:
+Note: approach, grasp, release and retreat all leave the cube resting, so cube height alone cannot tell them apart.
+Separating them needs gripper state (open/closed, in contact).
 
-1. **On Push-T, replanning frequency matters most.** Committing to the full plan beats replanning every 1 or 2
-   blocks at every budget above 1 iteration. A diagnostic with warm-starting turned off confirmed this is not a bug.
-2. **Thinking only pays off when the robot commits.** With committed plans, Push-T success rises from 0–12% at
-   1 iteration to 66–94% at 30. With frequent replanning it stays flat.
-3. **Iterations and samples need balancing.** 30 × 30 (66%) is worse than 10 × 100 (84%).
-4. **Episodes vary a lot in difficulty.** Cheap budgets solve a subset of what expensive ones solve. Picking the
-   cheapest budget that solves each episode would use about 17× less compute than the default (an optimistic
-   upper bound). This is the headroom an adaptive gate can exploit.
-5. **Cube behaves differently.** It levels off after about 3 iterations, and replanning after every block does not
-   hurt (74% vs 72%). On Cube the gate's opportunity is mainly saving compute.
+## Models
 
-## Repository layout
+All three are trained by us on OGBench `visual-cube-single-play`: 1,000 play trajectories (about 1M frames) at 64×64 px.
+Actions are 5-d.
 
-- [`lewm_sweep/`](lewm_sweep/) — sweep code, configs and every result file. Setup and reproduction steps are in
-  [`lewm_sweep/README.md`](lewm_sweep/README.md); details and caveats in [`lewm_sweep/SETUP_NOTES.md`](lewm_sweep/SETUP_NOTES.md).
-- [`dashboard/`](dashboard/) — standalone results page. Rebuild it with `python dashboard/build_dashboard.py`.
+| | LeWM (world model) | GCBC policy | Flow waypoint model |
+|---|---|---|---|
+| **Input** | last 3 frames (5 steps apart) + a 25-d action block per frame (5 actions × 5 dims) | current frame + goal frame, stacked channel-wise | last 3 LeWM latents (t, t−5, t−10) + goal latent |
+| **Output** | 192-d latent of the frame 5 steps later; rolled out autoregressively for planning | chunk of 5 actions | 2 waypoint latents, 5 and 10 steps ahead |
+| **Architecture** | ViT-tiny encoder (patch 8) + 6-layer autoregressive predictor, about 15M params | IMPALA-small CNN + MLP (512×3), OGBench's baseline | 4-layer AdaLN transformer, width 512, on frozen LeWM latents |
+| **Loss** | MSE on the next latent + 0.09 × SIGReg | MSE on z-scored actions; goals sampled from the same trajectory's future | rectified flow matching; sampled with 16 Euler steps from noise |
+| **Training** | official recipe: AdamW, lr 5e-5, batch 128, 88 epochs (about 9 h, L40S) | Adam, lr 3e-4, batch 256, 500k steps, random-shift augmentation | AdamW, lr 3e-4 → 3e-5, batch 1024, 100k steps, EMA |
+
+## Results
+
+**Hierarchy PoC** ([`own_lewm/`](own_lewm/)):
+- **Eval:** the 5 official tasks, a 200-step budget, 50 episodes per task (20 where marked †). A block is 5 actions.
+
+| Controller | Waypoints | Plan | Success |
+|---|---|---|---|
+| Policy alone | — | — | 21.6% |
+| LeWM + CEM | — | 5 blocks | 0% |
+| LeWM + CEM | oracle, 10 steps ahead | 2 blocks | 0% |
+| LeWM + CEM + policy | oracle, 10 steps ahead | 2 blocks | 12.8% |
+| LeWM + CEM † | oracle, 5 steps ahead | 1 block | 1% |
+| **LeWM + CEM + policy †** | **oracle, 5 steps ahead** | **1 block** | **23%** |
+| LeWM + CEM + policy † | flow, 5 steps ahead | 1 block | 8% |
 
 ## Next steps
 
-- Add a time cost and disturbances so that thinking costs task time, not just compute.
-- Log the planner's cost per step to test whether difficulty varies within an episode.
-- Train the gate (supervised from the sweep's labels first, then PPO), and compare against fixed budgets and a
-  heuristic that stops CEM when its cost plateaus.
+1. **Better waypoints:** close the gap from 8% (flow) to 23% (oracle). For example, measure how far flow waypoints
+   are from the expert path in true state, or propose waypoints from policy rollouts.
+2. **A better low level:** make LeWM add value over the policy at contact. Options are better contact dynamics, a
+   cube-aware cost, or tighter use of the policy prior. Benchmark in the oracle, 5-steps-ahead, 1-block setting
+   against the policy alone (21.6%).
+
+## Repository
+
+```
+official_lewm/     authors' checkpoint (quentinll/lewm-cube) + official eval
+  waypoints/       expert waypoints on full tasks
+  phase_split/     success by manipulation phase
+own_lewm/          hierarchy PoC: train_*.py, eval_flat.py, eval_hierarchical.py, diag_cost_ranking.py, results/
+```
+
+**Setup:** Python 3.10, `uv pip install -r official_lewm/requirements.lock.txt`, plus `ogbench` for `own_lewm/`.
+
+**Checkpoints:** on the public HF repo [`ericjkge/ogb-cube`](https://huggingface.co/ericjkge/ogb-cube).
