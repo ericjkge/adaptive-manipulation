@@ -9,11 +9,6 @@ pixels on OGBench `visual-cube-single`?
   outcome is closest to the waypoint. A GCBC policy optionally proposes candidate chunks.
 - **Execution:** run one chunk, then replan.
 
-**Two open problems:**
-1. **Learned waypoints are weak:** flow waypoints get 8% vs. 23% with oracle waypoints.
-2. **LeWM adds little over the policy:** 23% vs. 21.6% for the policy alone. Its errors concentrate in the contact
-   phases.
-
 ## Manipulation phases
 
 We split every pick-and-place into phases by whether the cube is resting on the table or lifted (more than 1 cm
@@ -60,13 +55,39 @@ Actions are 5-d.
 | **LeWM + CEM + policy †** | **oracle, 5 steps ahead** | **1 block** | **23%** |
 | LeWM + CEM + policy † | flow, 5 steps ahead | 1 block | 8% |
 
+**Where closed-loop episodes fail** ([`own_lewm/failure_phases.py`](own_lewm/failure_phases.py)):
+- **Setup:** the 23% setting (LeWM + CEM + policy, oracle waypoints 5 steps ahead) against the policy alone, on
+  the same seeds: 5 tasks × 20 episodes. Each episode is labelled with the furthest phase the robot reached, from
+  the true sim state.
+
+| Furthest phase reached | LeWM + CEM + policy | Policy alone |
+|---|---|---|
+| Approach (never touched the cube) | 9 | 0 |
+| Grasp (touched it, never lifted it) | 17 | 0 |
+| Lift (never held it up for a full block) | 1 | 0 |
+| Carry (never brought it over the target) | 44 | 72 |
+| Place (over the target, not within 4 cm) | 3 | 8 |
+| **Success** | **26** | **20** |
+
+- **Carry is the main failure for both.** All 44 of LeWM + CEM + policy's carry failures dropped the cube. The policy
+  dropped it in 44 episodes and was still holding it at the 200-step limit in the other 28.
+- **LeWM + CEM + policy also fails before the lift** (26 episodes; the policy never does). The arm gets within about
+  3.5 cm of the cube but never grasps it.
+- **Waypoint tracking cannot recover.** On failed episodes it ends at a median 84% of the expert path, and 74% of
+  replans make no progress. After a drop it keeps aiming at the late, placing waypoints, because progress along the
+  expert path only moves forward.
+
 ## Next steps
 
-1. **Better waypoints:** close the gap from 8% (flow) to 23% (oracle). For example, measure how far flow waypoints
-   are from the expert path in true state, or propose waypoints from policy rollouts.
-2. **A better low level:** make LeWM add value over the policy at contact. Options are better contact dynamics, a
-   cube-aware cost, or tighter use of the policy prior. Benchmark in the oracle, 5-steps-ahead, 1-block setting
-   against the policy alone (21.6%).
+1. **Better waypoints:** the low level reaches its waypoints well, including through contact. One block
+   from expert states, LeWM + CEM + policy reaches 96% of grasp, lift and place waypoints (vs. 79/37/100% for the
+   policy). Closed-loop failures come from the waypoints instead: tracking a fixed expert path stalls and only moves
+   forward, so after a miss or a drop it keeps aiming at waypoints that no longer fit the scene. The 23% "oracle"
+   is therefore not a ceiling.
+   - **Recovery:** waypoints conditioned on the current state should re-plan the pick from wherever the cube is.
+   - **Quality:** close the gap from 8% (flow) and beyond the expert-path oracle.
+2. **LeWM refinement:** revisit once waypoints recover. Check whether the carry drops persist with good
+   waypoints. Approach is the one phase where LeWM + CEM + policy is weaker than the policy alone (58% vs. 64%).
 
 ## Repository
 
@@ -74,7 +95,8 @@ Actions are 5-d.
 official_lewm/     authors' checkpoint (quentinll/lewm-cube) + official eval
   waypoints/       expert waypoints on full tasks
   phase_split/     success by manipulation phase
-own_lewm/          hierarchy PoC: train_*.py, eval_flat.py, eval_hierarchical.py, diag_cost_ranking.py, results/
+own_lewm/          hierarchy PoC: train_*.py, eval_flat.py, eval_hierarchical.py, diag_cost_ranking.py,
+                   failure_phases.py, results/
 ```
 
 **Setup:** Python 3.10, `uv pip install -r official_lewm/requirements.lock.txt`, plus `ogbench` for `own_lewm/`.
